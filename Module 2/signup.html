@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eceaea;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header, footer {
+      padding: 30px;
+    }
+    img {
+      width: 50%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+    form {
+      background: rgb(231, 226, 226);
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(233, 229, 229, 0.1);
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    fieldset {
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      font-size: 14px;
+      padding: 15px;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Welcome Image">
+    <h1>My  Website</h1>
+    <p>Welcome! To the My Website , Please sign up below to join our community.</p>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </fieldset>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required placeholder="Enter your age">
+
+      <input type="submit" value="Signup">
+    </form>
+  </main>
+
+  <footer>
+    <p>Click <a href="https://www.google.com">here</a> to visit Google.</p>
+    <p>&copy; 2025 My Awesome Website</p>
+  </footer>
+
+</body>
+</html>
