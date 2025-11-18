@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Masai Calculator</title>
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    h1 {
+      color: #4a4644;
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Georgia', serif;
+      font-size: 2.6rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .calc-container {
+      background: #fff;
+      max-width: 300px;
+      margin: 40px auto 0 auto;
+      border-radius: 8px;
+      /* Visible outline */
+      border: 2px solid #dedada;
+      /* Soft shadow for floating look */
+      box-shadow: 0px 5px 18px rgba(30,40,70,0.12);
+      padding: 26px 22px 32px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .display {
+      width: 235px;
+      height: 38px;
+      border-radius: 6px;
+      border: 1.5px solid #c3bfbf;
+      background: #fff;
+      margin-bottom: 22px;
+      font-size: 19px;
+      padding: 0 11px;
+      box-shadow: 0 2px 8px rgba(180,180,180,0.07);
+      outline: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 52px);
+      grid-template-rows: repeat(4, 52px);
+      gap: 13px;
+    }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      font-size: 21px;
+      font-weight: 500;
+      background: #fff;
+      color: #222;
+      cursor: pointer;
+      box-shadow: 0px 1.5px 5px rgba(60,70,100,0.12);
+      transition: background 0.12s, color 0.12s;
+    }
+    .btn:active {
+      background: #ececec;
+    }
+    .btn.operator {
+      background: #222;
+      color: #fff;
+    }
+    .btn.clear {
+      background: #f74a4a;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Masai Calculator</h1>
+  <div class="calc-container">
+    <input class="display" type="text" readonly />
+    <div class="grid">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn operator">+</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn operator">-</button>
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn operator">*</button>
+      <button class="btn clear">C</button>

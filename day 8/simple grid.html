@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 180px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 3px;
+      width: 340px;
+      margin: 50px auto;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .box1 { background: #ee2626; }
+    .box2 { background: #056dc9; }
+    .box3 { background: #ffe033; color: #222; }
+    .box4 { background: hsl(325, 77%, 27%); }
+    .box5 { background: #09be54; }
+    .box6 { background: #33a3ff; color: #222; }
+    .box7 { background: #f18d22; }
+    .box8 { background: #09c4a4; }
+    .box9 { background: #820000; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box box1">2.</div>
+    <div class="box box2">3.</div>
+    <div class="box box3">4.</div>
+    <div class="box box4">5.</div>
+    <div class="box box5">6.</div>
+    <div class="box box6">1.</div>
+    <div class="box box7">7.</div>
+    <div class="box box8">8.</div>
+    <div class="box box9">9.</div>
+  </div>
+</body>
+</html>
