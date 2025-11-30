@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debugging Task</title>
+</head>
+<body>
+
+<p id="message">Original Message</p>
+<button id="textButton">Change Text</button>
+<br><br>
+
+<div id="box" style="width: 100px; height: 100px; background: lightgray;"></div>
+<button id="colorButton">Change Background</button>
+
+<script>
+// FIX: Correct querySelector ID name
+const para = document.querySelector('#message');
+
+// FIX: Correct getElementById (not getElementsByName)
+const textButton = document.getElementById('textButton');
+
+// FIX: Correct method name (addEventListener)
+textButton.addEventListener('click', () => {
+    para.textContent = 'New Message';
+});
+
+// FIX: Correct getElementById and spelling
+const box = document.getElementById('box');
+const colorButton = document.getElementById('colorButton');
+
+colorButton.addEventListener('click', () => {
+    box.style.backgroundColor = 'blue';
+});
+</script>
+
+</body>
+</html>
