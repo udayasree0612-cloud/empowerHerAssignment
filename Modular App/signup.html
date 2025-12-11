@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup</title>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <h2>Signup</h2>
+  <input id="name" placeholder="Enter Name"><br><br>
+  <input id="email" placeholder="Enter Email"><br><br>
+  <input id="pass" placeholder="Enter Password" type="password"><br><br>
+  <button id="signupBtn">Signup</button>
+
+  <div id="footer"></div>
+
+  <script type="module">
+    import { navbar } from "./js/navbar.js";
+    import { footer } from "./js/footer.js";
+    import "./js/signup.js";
+
+    document.querySelector("#navbar").innerHTML = navbar();
+    document.querySelector("#footer").innerHTML = footer();
+  </script>
+</body>
+</html>
